@@ -8,6 +8,9 @@ The core of this project is a novel **dual-loop optimization framework**:
 *   **Outer Loop**: Utilizes a Genetic Algorithm (GA) to find a near-optimal RIS reflection matrix.
 *   **Inner Loop**: Employs an Alternating Optimization (AO) algorithm to iteratively optimize the transmit coefficients and the receive factor for a given RIS configuration.
 
+![Algorithm Framework](assets/structure.png)
+*Figure 1: Dual-loop optimization framework. The outer loop uses GA to optimize RIS reflection matrix, while the inner loop alternately optimizes transmit coefficients and receive factor.*
+
 The code and simulation results are based on the research paper: "Over-the-Air Computation via Practical Phase-Shift Reconfigurable Intelligent Surface".
 
 ## Quick Start
@@ -66,7 +69,7 @@ Below are some key figures from our simulations. The parameters for each figure 
 **1. Algorithm Convergence (MSE vs. Iterations)**
 This figure shows the convergence behavior of our proposed GA-based algorithm compared to SCA and a random phase baseline. Our algorithm converges to a significantly lower MSE.
 
-![Iteration.png](results/Iteration.png)
+![Iteration.png](results/Iteraon.png)
 *Parameters used: K=20 users, N=200 RIS elements, AP noise variance sigma_a2=1e-12, max_iter=30, alpha_min=0.2.*
 
 **2. Performance vs. Number of RIS Elements (MSE vs. N)**
